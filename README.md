@@ -54,11 +54,13 @@ Now, the Stack becomes empty, which means we have visited all the nodes, and our
  <li>If Not Visited, add it to the STACK. Else Call The Function Again Until No more nodes needs to be visited.</li>
 </ol></B>
 <H3>PROGRAM:</H3>
-```
 from collections import deque
+
 from collections import defaultdict
+
 def dfs(graph, start, visited, path):
-    path.append(start)
+```
+    path.append(start):
     visited[start] = True
     for neighbour in graph[start]:
         if visited[neighbour] == False:
